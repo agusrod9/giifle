@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giifle</title>
+    <link rel="icon" href="./public/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./src/css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body class="body">
+    <div class="viewer">
+        <div class="viewerBg">
+            <span class="material-symbols-outlined closeViewerBtn">
+                disabled_by_default
+            </span>
+            <img alt="" class="viewerImg">
+        </div>
+    </div>
+    <div class="div__container">
+        <div class="div__header">
+            <div class="div__logo">
+                <img class="img__logo" src="./public/images/giifle.png" alt="logo">
+            </div>
+            <div class="div__search">
+                <span id="search" class="material-symbols-outlined">
+                    search
+                </span>
+                <input id="gifBuscado" type="text" placeholder="¿Que Gif quieres buscar hoy?">
+                <span id="mic" class="material-symbols-outlined">
+                    mic
+                </span>
+                <span id="cam" class="material-symbols-outlined">
+                    filter_center_focus
+                </span>
+            </div>
+        </div>
+        <div class="div__responseGifs">
+
+        </div>
+    </div>
+    <script src="./src/js/app.js"></script>
+</body>
+</html>

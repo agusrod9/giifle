@@ -1,0 +1,156 @@
+body, .div__container, .div__header, .div__logo, .div__search, .div__responseGifs, .viewer, .viewerBg {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+}
+
+.viewer{
+    height: 0.1px;
+    width: 0.1px;
+    position: relative;
+    display: none;
+}
+
+.imgRes img{
+    margin: 3px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.div__container{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.div__header{
+    background-color: #fff;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.div__logo{
+    width: 600px;
+    height: 160px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+
+.img__logo{
+    width: 295px;
+    height: 97px;
+}
+
+.div__search{
+    max-width: 500px;
+    width: 50%;
+    height: 45px;
+    padding: 0 15px;
+    background-color: #fff;
+    display: flex;
+    align-items: center ;
+    justify-content: space-around;
+    border: 1px solid grey;
+    border-radius: 25px;
+    user-select: none;
+}
+
+#gifBuscado{
+    width: 100%;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+#gifBuscado:focus{
+    outline: none;
+    background-color: transparent;
+}
+
+#gifBuscado:active{
+    outline: none;
+    background-color: transparent;
+}
+
+.div__responseGifs{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;    
+}
+
+.div__headerOnSearch{
+    height: 220px;
+    background-color: #fff;
+}
+
+.div__imgViewer{
+    height: 100vh;
+    width: 100vw;
+    background-color: #000000f6;
+    position: absolute;
+    z-index: 10;
+    overflow: hidden;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.viewerBg{
+    background-color: #000000;
+    max-width: 650px;
+    max-height: 560px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.viewerBg img{
+    max-width: 800px;
+    max-height: 600px;
+    margin-bottom: 35px;
+    pointer-events: none;
+    user-select: none;
+}
+
+.closeViewerBtn{
+    visibility: hidden;
+}
+
+.closeViewerBtn:active{
+    opacity: 40%;
+}
+
+.viewerBg .closeViewerBtn{
+    font-size: 35px;
+    color: #ffffffbb;
+    position: relative;
+    top: 1px;
+    align-self: flex-end;
+    visibility: visible;
+    margin-right: 10px;
+    z-index: 20;
+}
+
+
+
+body.imgViewer-open{
+    height: 100vh;
+    overflow-y: hidden;
+}
